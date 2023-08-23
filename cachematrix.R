@@ -54,9 +54,13 @@ cacheSolve <- function(x, ...) {
   m
 }
 
+
+## Using a simple 2x2 matrix we will check if this will work.
+
 B <- matrix(1:4,2,2)
 B
 
+##using the created functions
 Bcache<- makeCacheMatrix(B)
 cacheSolve(Bcache)
-
+##Results in the correct inverse matrix
